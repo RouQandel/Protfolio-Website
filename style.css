@@ -486,18 +486,19 @@ span{
 }
 .rating{
     position: absolute;
-    top:45%;
+    top:25%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
  .card h2{
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 10px;
     position: absolute;
-    top: 40%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2rem;
+    font-size: 1.7rem;
+    width: 70%;
 }
 .card p{
     margin-bottom: 20px;
@@ -506,6 +507,7 @@ span{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.5rem;
+    width:70% ;
 }
 img {
     width: 100%;
