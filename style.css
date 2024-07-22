@@ -83,25 +83,34 @@ section{
     flex-direction: column;
     align-items: baseline;
     text-align: left;
+    box-sizing: border-box;
     justify-content: center;
     margin-top: 3rem;
 }
+.home-content h1,
+.home-content p {
+    width: 40%;
+}
 span{
     color: var(--main-color);
+    column-gap: all;
 }
 .logo span{
     color: var(--main-color);
+    column-gap: all;
 }
 .home-content h3 {
     margin-bottom: 2rem;
     margin-top: 1rem;
     font-size: 3.5rem;
+    column-gap: all;
 }
 .home-content h1{
     font-size: 7rem;
     font-weight: 700;
     margin-top: 1.5rem;
     line-height: 1;
+    column-gap: all;
 }
 .home-img{
     border-radius: 50%;
@@ -121,10 +130,14 @@ span{
         0 0 100px var(--main-color);
 }
 .home-content p{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
     font-weight: 500;
     line-height: 1.8;
     max-width: 1000px;
+    column-gap: all;
 }
 .social-icons a{
     display: inline-flex;
@@ -277,13 +290,13 @@ span{
 
 }
 
-.education {
+.project {
     padding: 100px 15px;
     background: var(--second-bg-color);
 
 }
 
-.education h2 {
+.project h2 {
     margin-bottom: 5rem;
 }
 
@@ -319,6 +332,7 @@ span{
     text-align: right;
 }
 
+
 .timeline-item:nth-child(even) {
     padding-left: calc(50% + 30px);
 }
@@ -338,7 +352,7 @@ span{
     font-size: 20px;
     font-weight: 800;
     color: white;
-    margin: 6px 0 15px;
+    margin: 6px 0 15px;   
 }
 .timeline-content{
     background-color: var(--bg-color);
@@ -425,7 +439,7 @@ span{
     line-height: 1.7;
     margin-bottom: 10rem;
 }
-.testimonials {
+.certificates {
     background: var(--second-bg-color);
 }
 .testimonials-box{
@@ -435,7 +449,7 @@ span{
     justify-content: center;
     flex-direction: column;
 }
-.testimonials .heading{
+.certificates .heading{
    margin-bottom: 5rem; 
 }
 .container {
