@@ -299,6 +299,13 @@ span{
 .project h2 {
     margin-bottom: 5rem;
 }
+.my-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+    border-radius: 3.7rem;
+}
 
 .timeline-items {
     max-width: 1200px;
@@ -317,6 +324,7 @@ span{
     left: calc(50% - 1px);
 }
 
+
 .timeline-item {
     margin-bottom: 40px;
     width: 100%;
@@ -327,14 +335,15 @@ span{
     margin-bottom: 0;
 }
 
+
 .timeline-item:nth-child(odd) {
-    padding-right: calc(50% + 30px);
-    text-align: right;
+    padding-left: calc(50% + 30px);
+    text-align: left;
 }
 
 
 .timeline-item:nth-child(even) {
-    padding-left: calc(50% + 30px);
+    padding-right: calc(50% + 30px);
 }
 
 .timeline-dot {
@@ -362,6 +371,9 @@ span{
     box-shadow: 0 0 10px var(--main-color) ;
     cursor: pointer;
     transition: 0.3s  ease-in-out;
+}
+.timeline-content1{
+    padding: 0;
 }
 .timeline-content:hover {
     transform: scale(1.05);
@@ -523,7 +535,7 @@ span{
     font-size: 1.5rem;
     width:70% ;
 }
-img {
+.card img{
     width: 100%;
     height: 100%;
     object-fit: cover;
