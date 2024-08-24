@@ -49,6 +49,10 @@ body {
 .logo span{
     text-shadow: 0 0 25px var(--main-color);
 }
+.navbar.active {
+    display: block;
+ 
+}
 
 .navbar a{
     font-size: 1.8rem;
@@ -681,56 +685,62 @@ span{
       }
       .contact form{
         flex-direction: column;
-        
       }
-    .service-info h4{
-        font-size:2.2rem;
-        font-weight:800;
-       line-height: 2;
-    }
-    .service-info p{
-        font-size: 1.3rem;
-    }
-    .text-animation span{
-        font-size:33px ;
-    }
-} 
-/* @media(max-width:932px){
-    header{
+      .footer{
         padding: 2rem 3%;
+      }
     }
-    section{
-        padding: 10rem 3% 2rem;
-    }
-    .timeline-items::before{
-        left: 7px;
-    }
-    .timeline-item:nth-child(odd){
-        padding-right: 0;
-        text-align: left;
-    }
-    .timeline-item:nth-child(odd),
-    .timeline-item:nth-child(even){
-        padding-left: 37px;
-    }
-    .timeline-dot{
-        left: 0;
-    }
-    .services{
-        padding-bottom: 7rem;
-    }
-    .testimonials .wrapper{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .service-info h4{
-        font-size:2.2rem;
-        font-weight:800;
-       line-height: 2;
-    }
-    .service-info p{
-        font-size: 1.3rem;
-    }
-   
-    /* .contact form{
 
-    } */
+  
+
+ @media(max-width:895px){
+    #menu-icon{
+        display: block;
+   }
+   .navbar{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 50%;
+    padding: 1rem 3%;
+    background: rgb(0, 0, 0,0.8);
+    backdrop-filter: blur(20px);
+    border-bottom-left-radius: 2rem;
+    border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    display: none;
+   }
+   .navbar .active{
+    display: block;
+   }
+   .navbar a{
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    color: white;
+   }
+   .home{
+    flex-direction: column-reverse;
+    margin:5rem 4rem ;
+   }
+   .home-content h3{
+    font-size: 2.6rem;
+   }
+   .home-content h1{
+    font-size: 8rem;
+    margin-top: 3rem;
+   }
+   .home-content p{
+    max-width: 600;
+    margin: 0 auto;
+   }
+   .home-img img {
+    width: 56vw;
+   }
+   .services h2{
+    margin-bottom: 3rem;
+   }
+   .services-continer{
+    grid-template-columns: repeat(1,1fr);
+   }
+ }
